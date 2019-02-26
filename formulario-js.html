@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <form name="FormConcatena" action="" method="POST">
+        Nome...<input type="text" name="nome"><br>
+        Sobrenome...<input type="text" name="sobrenome"><br>
+        <button name="btn_concatena" onclick="alerta()">CONCATENAR</button>
+        <button name="btn_cancela">LIMPAR</button>
+     </form>
+
+
+     <script>
+        let meu_nome;
+        let meu_sobreNome;
+        let meu_nomeCompleto;
+        
+        function alerta(){
+
+        meu_nome = document.FormConcatena.nome.value;
+        meu_sobreNome = document.FormConcatena.sobrenome.value;
+
+        meu_nomeCompleto = meu_nome + ' ' + meu_sobreNome;
+
+        if( meu_nome.value !== true){
+            window.alert('O campo nome não foi preenchido!!');
+        }else if( meu_sobreNome.value !== true){
+            window.alert('O campo sobrenome não foi preenchido!!');
+        }
+        
+        else{
+            window.alert('Seja bem vindo ' + meu_nomeCompleto);
+        }
+        }
+     </script>
+</body>
+</html>

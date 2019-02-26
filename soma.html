@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soma</title>
+</head>
+<body>
+<form name="formulario" action="" method="get">
+<input type="number" name="ValorDois"><br>
+<button onclick="valor()" name="btn_somar">SOMAR</button>
+<button name="btn_cancelar">CANCELAR</button>
+</form>
+    <script>
+        var valorUm;
+        var valorDois;
+        var total;
+
+        /*
+        Author: Guilherme Luiz Quintino Da Silva
+        Instituição de ensino : Fundação Bradesco
+        */
+
+      //RECEBENDO VALORES!!
+      valorUm = window.prompt('Digite um valor:', 'Digite aqui!');
+
+      //ESCREVENDO NO DOCUMENT!!
+      document.write(valorUm);
+
+      //CHAMADA DA FUNÇÃO COM ESCUTA ON-CLICK!!
+      function valor(){
+      valorDois = document.formulario.ValorDois.value;
+
+      //CONVERTENDO DE STRING PARA NÚMERO INTEIRO!!
+      total = parseInt(valorUm) + parseInt(valorDois);
+      window.alert('A soma é ' + total);
+      }
+    </script>
+</body>
+</html>
