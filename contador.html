@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador no Prompt do Browser</title>
+</head>
+<body> 
+     <h2> Imprimindo números! </h2>
+
+
+      <button onclick = "enquanto()" name="btn_contar">Clique para inserir o valor há ser atingido!</button>
+      <button name="btn_fechar">Fechar</button>
+
+    <script>
+        let contador = window.prompt('Digite um valor inicial', 'Digite aqui!');
+        let valor;
+
+
+       function enquanto(){
+          let numeroDigitado = window.prompt('Digite o valor para ser atingido', 'Digite aqui!');
+          while(contador < numeroDigitado){
+              contador++;
+              valor = document.write('Número: ' + contador + '<br>');
+          }
+       }
+    </script>
+</body>
+</html>
