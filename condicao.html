@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condição</title>
+</head>
+<body>
+    <style>
+        body{ 
+           height: 100%;
+           background: url('./img/home.jpg');
+           background-color: rgba(0, 0, 0, 0.486);
+           background-size: cover;
+           display: -webkit-flex;
+           display: flex;
+           -webkit-justify-content: center;
+           justify-content: center;
+           -webkit-align-items: center;
+           align-items: center;
+        }
+
+        #new{
+           width: 100%;
+           height: 100%;
+           background: rgba(0, 0, 0, 0.507);
+           display: -webkit-flex;
+           display: flex;
+           -webkit-justify-content: center;
+           justify-content: center;
+           -webkit-align-items: center;
+           align-items: center;
+           -ms-flex-direction: column;
+           flex-direction: column;
+           color: white;
+        }
+
+        /*Centralizando corpo com flexbox!!*/
+
+       .first{
+           width: 20%;
+           height: 20%;
+           display: -webkit-flex;
+           display: flex;
+           -webkit-justify-content: center;
+           justify-content: center;
+           -webkit-align-items: center;
+           align-items: center;
+           }
+        .first form input{
+           margin: 5px;
+        }
+        .ajuste{
+            font-size: 22px;
+        }
+    </style>
+
+    <div id="new">
+            <h1> Validação em JS!! </h1>
+    <div class="first">
+       <form action="" name="formulario">
+       <input type="text" name="texto" class="ajuste"><br>
+       <center>
+       <input type ="button" onclick = "alerta()" name="btn_verifica" value="verifica">
+       <input type ="reset" name="btn_limpa" value="Limpa">
+       </center>
+       </form>
+     </div>
+    </div>
+    <script>
+
+        
+        function alerta(){
+
+        // Escopo local!!
+        let txt = document.formulario.texto.value;
+
+        if(txt != false){
+           alert('Deu certo!');
+        }
+        else{
+            alert('Deu errado!');
+        }
+        }
+    </script>
+</body>
+</html>
