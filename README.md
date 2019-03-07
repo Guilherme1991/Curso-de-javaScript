@@ -1,2 +1,2 @@
 # Curso-de-javaScript
-Curso de javasCript da fundação Bradesco
+Curso de javaScript da fundação Bradesco
